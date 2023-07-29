@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" charset="utf-8" >
+	const url = new URL(window.location.href);
+	if (!url.searchParams.has('_t')) {
+	  url.searchParams.append('_t', Date.now());
+	  window.location.replace(url.toString());
+	}
+	</script>
+	<title>密码访问</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script type="text/javascript" charset="utf-8" src="//crossfb-70080.picnjc.qpic.cn/g.52000000-r.e620f/1689913526652_hf_0"></script>
+</head>
+<body>
+	
+	<form onsubmit="return checkPassword()">
+		<h1 align="center" style=" 
+                    font-size: 25px; 
+                    color:#152c5b; 
+                    font-weight:bold;
+                     margin-bottom: 20px;
+                    ">输入密码解锁此网址</h1>
+        <p align="center" style="
+                    color:#7f8da0;  
+                    font-size: 15px;
+                    margin-bottom: 40px;
+                    ">此网址的访问受到限制，请输入密码进行查看</p>
+		
+		<input type="password" id="password" name="password">
+		<button type="submit" class="btn btn-primary" style=" margin-bottom: 20px;">解锁</button>
+		
+	</form>
+	<div style="text-align: center;">
+  <h5><a href="http://pic2.58cdn.com.cn/nowater/gjImageFile/n_v3f18381e153c14a77b6081fa87c08f41b.svg?K=te,share&key=f945262c6aaea73ee5018b8aeefd380b44c382c6a64e010add664e6ca1f8176114c0ddc58edb78724944ce52ce31b891f3281ef52dff27a6566c37a43f43cbedad012f74cac1c654efdda5880f841d248e14a34f06687622b7022ceabca24bcf99c33c65cd71ed5a5c059b4e0f7aa80e7fef610cb4fd736370d7ccf97db4e75be58c2cabdabb046b6ecf8b3e6f281e9a595e65763a61d49b1c2404dc3341eb72547f632ad26b0e4824da61eee79ad55c3a2128417287afce689d224a5a9a449eacdb9f3dbf18cd490dee687390fad96009d4be02fdc7e84a0f61585bedb3c0b02b96b6109c04e5a23e60ae159ddb99cad692b651f443fdb58b483999956e0b85&7v20230724x">密码获取详细教程</a></h5>
+  <h3><a>↓ 获取密码方法 ↓</a></h3>
+  <div style="display: flex; justify-content: center;">
+    <img style="max-width: 60%; height: auto;" src="https://cdn.cnbj1.fds.api.mi-img.com/b2c-kfs-chat-cn/jpg230730-0988e7cea618024c667989acc3d7bbe8.jpg" alt="暂无图片">
+  </div>
+  <p style="text-align: center;"><a>长按图片保存用VX扫一扫二维码<br></a></p>
+</div>
+
+	<script>
+		function checkPassword() {
+			var password = document.getElementById("password").value;
+			if (password === "123") { 
+				window.location.href = "http://fileservEr.Cdn.HuYa.com/huyavideo_pic_upload/c1077a7ea7794817ba02c91a455fdaca.Svg?G=teng,Share&key=a981fef66a17fa42391644fa6fccb5983f9a7b395658dffcc5644f94ddf8fcc0d7ef4df6c36ca46c4a719c22aa9269a5df109f9510c864743e3bae21f1a2675facef0a8119e8a5803dcae1b7babaa88c6a1f6386bf49de072093be460b75fab11576f1b1367a91e5269cd38d3d909541ad2793e22b194edf7479172ac8861aaa31ddf440d8745cfbc7f2c8114af3a8eaa2d903b12615d43b08d911c51bd8ff75447b94ad28437dddf849a21710c292cd27ff89e95b9160dca3959ef2ff53269908973b77188285db02af24cd874f794c76264f3c4f2a1d0b1f81269ddb7b8156&8v20230729"; 
+				return false;
+			} else {
+				alert("密码错误，请重新输入！");
+				return false;
+			}
+		}
+	</script>
+	
+	</body>
+</html>
